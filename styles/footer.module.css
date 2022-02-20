@@ -11,7 +11,7 @@
     /* position: absolute; */
     bottom: 0;
     background: linear-gradient(to right, #00093c, #2d0b00);
-    width: 105%;
+    width: 100%;
     min-height: 160px;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -31,7 +31,10 @@
     border-bottom: 1px solid whitesmoke;
     
 }
-@media(max-width:576px){
+@media(max-width:768px){
+    .parent{
+        width: 105%;
+    }
     .child h3,
     .child p{
         padding: 5px 0px;

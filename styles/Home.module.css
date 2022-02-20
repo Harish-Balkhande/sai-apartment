@@ -22,7 +22,7 @@
 /* -------------Hero Section----------- */
 .container{
   margin: 0;
-  width: 105%;
+  width: 100%;
   background-color: #f8f8f8;
 }
 .hero{
@@ -58,7 +58,11 @@
   color: #551804;
   border-color: #551804;
 }
-
+@media(max-width:768px) {
+  .container{
+    width: 105%;
+  }
+}
 /* -------------End Of Hero Section----------- */
 
 /* ---------------Message section--------- */
