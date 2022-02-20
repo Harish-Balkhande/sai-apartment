@@ -1,0 +1,39 @@
+/* .footer{
+    display: block;
+    position: fixed;
+    bottom: 0;
+} */
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* position: absolute; */
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    width: 105%;
+    min-height: 160px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.child{
+    width: 23%;
+    margin: 10px;
+}
+.child h3,
+.child p{
+    color: whitesmoke;
+    padding: 5px 23px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.child h3{
+    border-bottom: 1px solid whitesmoke;
+    
+}
+@media(max-width:576px){
+    .child h3,
+    .child p{
+        padding: 5px 0px;
+    }
+}

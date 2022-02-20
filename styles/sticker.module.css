@@ -1,0 +1,19 @@
+.whatsApp{
+    display: block;
+    width: 37px;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    top: 20%;
+    cursor: pointer;
+    background-color: #19ff19;
+    z-index: 10;
+}
+.icon:hover{
+    color: rgb(204, 60, 60);
+}
+/* @media(max-width:576px){
+    .whatsApp{
+        right: 12px;
+    }
+} */

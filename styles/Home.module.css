@@ -1,116 +1,209 @@
-.container {
-  padding: 0 2rem;
-}
-
-.main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+/* --------------Utility Classes---------- */
+.flexdiv{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
-}
+  /* justify-content: space-between; */
+  margin: auto;
+  width: 80%;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;background-color: #f8f8f8;
 
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  /* border: 1px solid red; */
 }
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.overlay{
+  background-image: linear-gradient(rgba(21, 1, 48, 0.5),rgba(243, 87, 87, 0.7)), url("../public/Images/decore.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
+/* --------------End OF Utility Classes---------- */
 
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
+/* -------------Hero Section----------- */
+.container{
   margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+  width: 105%;
+  background-color: #f8f8f8;
+}
+.hero{
+  /* display: block; */
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url("../public/Images/hero\ section.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero .hero_container{
+  display: block;
+  width: 100%;
+  margin: auto;
+  /* border: 3px solid blue; */
+}
+.hero h4,
+.hero p{
+  color: aliceblue;
+  margin: 0;
+}
+.enquary_btn{
+  background-color: transparent;
+  color: aliceblue;
+  font-weight: 500;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+  padding: .3rem .7rem;
+}
+.enquary_btn:hover{
+  color: #551804;
+  border-color: #551804;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
+/* -------------End Of Hero Section----------- */
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+/* ---------------Message section--------- */
+.messagediv{
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  align-items: center;
+  margin-bottom: 33px;
+}
+.messagediv h2{
+  display: block;
+  width: 70%;
+  margin: 20px auto;
+  text-align: center;
+  align-items: center;
+}
+.messagediv p{
+  /* font-family: 'Waterfall', cursive; */
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: 'Kalam', cursive;
+  font-size: 20px;
+  margin-bottom: 0;
+  text-align: justify ;
+}
+@media all and (max-width: 768px) {
+  .messagediv{
+    width: 80%;
+    padding: 0;
   }
 }
+/* ---------------End of Message section--------- */
+
+/* ----------------Markups section-------------- */
+.mark1,
+.mark2,
+.mark3,
+.mark4{
+  width: 25%;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+.mark_div:nth-child(-n+3){
+  border-right: 1px solid rgb(218, 211, 211);
+
+}
+.mark_div i{
+  width: 80%;
+  padding: 20px;
+  font-size: 45px;
+  color: #551804;
+}
+.mark_div h6{
+  color: #551804;
+  margin: 5px 0px 10px 0px;
+}
+.markup{
+  background-color: #f8f8f8;
+}
+@media screen and (max-width: 768px){
+  .markup > *{
+    flex: 1 50%;
+  }
+  .mark_div:nth-child(2){
+    border-right: #f8f8f8;
+  }
+}
+@media screen and (max-width: 400px){
+  .markup > *{
+    flex: 1 100%;
+  }
+  .mark_div:nth-child(2){
+    border-right: #f8f8f8;
+  }
+}
+/* ----------------End of Markups section-------------- */
+
+/* ----------------Projects section---------------- */
+.projects{
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 80px;
+}
+.projects h2{
+  color: aliceblue;
+  flex: 100%;
+}
+
+.project_item{
+  width: 20%;
+  /* border: 1px solid red; */
+  border-radius: 5px;
+  margin: 20px 30px;
+}
+@media all and (max-width: 768px){
+  .project_item{
+    flex: 35%;
+  }
+  .project_item:last-child{
+    flex: 40%;
+    flex-grow: 0;
+    /* width: 10%; */
+  }
+}
+@media all and (max-width: 576px){
+  .project_item{
+    flex: 70%;
+    flex-grow: 0;
+  }
+  .project_item:last-child{
+    flex: 70%;
+    flex-grow: 0;
+    /* width: 10%; */
+  }
+}
+/* -----------End of Projects section---------------- */
+
+/* -----------------Tetimonials----------------------- */
+.testimonials{
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  /* border: 2px solid red; */
+}
+.testimonials h2{
+  text-align: center;
+  margin: .5rem 0rem;
+}
+.crousel_div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem;
+  background-color:rgb(236, 236, 236);
+  /* margin: rem 0rem; */
+}
+.crousel_div p{
+  width: 50%;
+  margin: 1rem 3rem;
+}
+.crousel_div p strong{
+  display: block;
+  font-size: 20px;
+}
+/* -----------------End Of Tetimonials----------------------- */

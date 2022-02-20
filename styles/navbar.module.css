@@ -1,0 +1,109 @@
+.nav{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 70px;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 45px;
+    flex-wrap: wrap;
+}
+.nav .logo{
+    letter-spacing: 3px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin: 0;
+    background: linear-gradient(90deg, rgb(0, 255, 255) 40%, rgb(187, 36, 111) 55%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 30px;
+}
+.nav ul li{
+    margin: 0 5px;
+    margin-top: 1rem;
+}
+.nav ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    border-bottom: 1.5px solid transparent;
+    transition: all 0.2s ease;
+}
+.nav ul li a.active,
+.nav ul li a:hover{
+    border-color: tomato;
+    color: tomato;
+}
+.nav .menu_btn,
+.nav .close_btn{
+    color: tomato;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+.input[type="checkbox"]{
+    display: none;
+    width: 5px;
+}
+
+/* making navbar responsive */
+@media(max-width:768px){
+    .nav {
+        width: 105%;
+        padding: 0 20px 0 25px;
+    }
+    .nav .menu_btn{
+        display: inline-block;
+    }
+    .input:checked ~ .menu_btn{
+        display: none;
+    }
+    .input:checked ~ .close_btn{
+        display: block;
+    }    
+    .nav ul{
+        position: fixed;
+        top: -200vh;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(to right, #00093c, #2d0b00);
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .input:checked ~ ul {
+        top: 70px;
+        left: 0;
+    }
+    .nav ul li{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .nav ul li a{
+        width: 100%;
+        display: block;
+        font-size: 20px;
+    }
+}
+@media(max-width:576px){
+    .nav {
+        width: 105%;
+        padding: 0 20px 0 5px;
+    }
+}
+
+
