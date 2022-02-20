@@ -17,7 +17,7 @@ export default function Home() {
         <div className={styles.hero_container}>
           <h4>Book Your Dream Home Today</h4>
           <p>2BHK, 3BHK Flats Available !</p><br />
-          <Link href="/contact"><button className={styles.enquary_btn}>Enquiry Now</button></Link>
+          <Link href="/contact" passHref><button className={styles.enquary_btn}>Enquiry Now</button></Link>
         </div>
 
       </selection>

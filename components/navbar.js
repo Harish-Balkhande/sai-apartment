@@ -14,9 +14,9 @@ export default function Navbar() {
             
 
             <ul className={Style.ul} id="menu_bar"> 
-                <li className={Style.li}><Link href="/"><a className={router.pathname == "/" ? Style.active : ""}>Home</a></Link></li>
-                <li className={Style.li}><Link href="/contact"><a className={router.pathname == "/contact" ? Style.active : ""}>Contact Us</a></Link></li>
-                <li className={Style.li}><Link href="/about"><a className={router.pathname == "/about" ? Style.active : ""}>About Us</a></Link></li>
+                <li className={Style.li}><Link href="/" ><a className={router.pathname == "/" ? Style.active : ""}>Home</a></Link></li>
+                <li className={Style.li}><Link href="/contact" ><a className={router.pathname == "/contact" ? Style.active : ""}>Contact Us</a></Link></li>
+                <li className={Style.li}><Link href="/about" ><a className={router.pathname == "/about" ? Style.active : ""}>About Us</a></Link></li>
             </ul>
        </nav>
 

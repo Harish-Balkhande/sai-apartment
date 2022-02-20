@@ -12,6 +12,9 @@
 .icon:hover{
     color: rgb(204, 60, 60);
 }
+.whatsApp i{
+    font-size: 20px;
+}
 /* @media(max-width:576px){
     .whatsApp{
         right: 12px;
